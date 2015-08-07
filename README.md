@@ -14,5 +14,5 @@ To run in to build this application you need following libraries:
 7. okhttp-1.0.2.jar +
 8. universal-image-loader-1.9.4.jar +
 
-
+There has a .apk file to test application on real.
 
