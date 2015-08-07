@@ -1,7 +1,8 @@
 # OstModern
 Just a little demonstration for OstModern. 
 
-DEPENDENCIES 
+DEPENDENCIES
+==============
 
 To run in to build this application you need following libraries:
 
