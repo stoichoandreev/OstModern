@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="animated_splash_text">Skylark VoD</string>
+    <string name="loading">Loading...</string>
+    <string name="assets_fonts_folder">fonts/</string>
+    <string name="default_font_name">bubble_sharp.ttf</string>
+    <string name="card_view">Card View</string>
+    <string name="grid_view">Grid View</string>
+    <string name="films">Films</string>
+    <string name="items">Items</string>
+    <string name="no_items">There isn\'t items in the set</string>
+    <string name="available_on">Available on : </string>
+    <string name="default_episode_title">We don\'t have title for this episode</string>
+    <string name="no_connection_header">Offline</string>
+    <string name="no_connection">There hasn\'t internet connection.\nPlease check your network.</string>
+    <string name="exit">Exit</string>
+
+
+    <string name="app_name">OstModernIncome</string>
+</resources>

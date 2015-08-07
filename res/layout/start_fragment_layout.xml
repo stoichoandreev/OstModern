@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="7dp"
+        android:weightSum="2">
+
+        <!-- First Row-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="1dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:id="@+id/first_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:background="@drawable/shadow_resource">
+                <ImageView
+                    android:id="@+id/first_button_image"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/card_view_image"
+                    android:scaleType="centerCrop"/>
+                <RelativeLayout
+                    android:id="@+id/first_button_text_container"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/buttons_color">
+                    <uk.ostmodern.incoming.test.custom.OstModernCustomTextView
+                        android:id="@+id/first_button_text"
+                        style="@style/OstModernButtonStyle"
+                        android:text="@string/card_view"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- Second Row-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:id="@+id/second_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:background="@drawable/shadow_resource">
+                <RelativeLayout
+                    android:id="@+id/second_button_text_container"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/buttons_color">
+                    <uk.ostmodern.incoming.test.custom.OstModernCustomTextView
+                        android:id="@+id/second_button_text"
+                        style="@style/OstModernButtonStyle"
+                        android:text="@string/grid_view"/>
+                </RelativeLayout>
+                <ImageView
+                    android:id="@+id/second_button_image"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/grid_view_image"
+                    android:scaleType="centerCrop"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

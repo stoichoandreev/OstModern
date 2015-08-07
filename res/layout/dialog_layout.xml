@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <uk.ostmodern.incoming.test.custom.OstModernCustomTextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:textSize="16dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/main_margin"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"/>
+    <uk.ostmodern.incoming.test.custom.OstModernCustomTextView
+        android:id="@+id/dialog_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/main_margin"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textColor="@color/black_with_80_percent_opacity"
+        android:layout_below="@+id/dialog_title"/>
+    <uk.ostmodern.incoming.test.custom.OstModernCustomButton
+        android:id="@+id/dialog_dismiss_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_text"
+        android:textColor="@color/black_with_80_percent_opacity"/>
+
+</RelativeLayout>

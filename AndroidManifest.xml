@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="uk.ostmodern.incoming.test"
+          android:versionCode="1"
+          android:versionName="1.0"
+          android:installLocation="preferExternal">
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="22"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+    <application
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/OstModernTheme"
+        android:name="uk.ostmodern.incoming.test.OstModernIncomeApplication">
+        <activity android:name=".activities.StartActivity"
+                  android:label="@string/app_name"
+                  android:configChanges="locale|keyboard|keyboardHidden|orientation|locale"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name=".receivers.ConnectivityChangeBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="anroid.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+    </receiver>
+    </application>
+</manifest>

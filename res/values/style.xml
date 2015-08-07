@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="OstModernTheme" parent="AppBaseTheme">
+        <item name="windowActionBar">false</item>
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:textColorPrimary">@color/black_with_80_percent_opacity</item>
+        <item name="colorPrimary">@color/background_floating_material_dark</item>
+        <item name="colorPrimaryDark">@color/background_material_dark</item>
+
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@drawable/background_image</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <!-- <item name="android:colorBackground">@color/white_opaque</item> -->
+        <!-- <item name="android:textColor">@android:color/white</item> -->
+        <item name="android:textViewStyle">@style/OstModernTextViewStyle</item>
+        <item name="android:editTextBackground">@android:color/transparent</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <!--<item name="android:actionBarStyle">@style/ReInventorTheme.ActionBarStyle</item>-->
+        <!--<item name="android:actionMenuTextAppearance">@style/MyMenuTextAppearance</item>-->
+    </style>
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/black</item>
+    </style>
+    <style name="ReInventorTheme.NoActionBar" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:textSize">22sp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="ActionBarPadding">
+        <item name="android:paddingTop">5dp</item>
+        <!--<item name="android:paddingTop">?android:actionBarSize</item>-->
+        <!--<item name="android:paddingTop">@dimen/abs__action_bar_default_height</item>-->
+    </style>
+
+    <style name="MyMenuTextAppearance" parent="OstModernTheme">
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- Style to use for ALL text views (including FontTextView) -->
+    <style name="OstModernTextViewStyle" parent="@android:style/Widget.Holo.Light.TextView">
+        <item name="android:textAppearance">@style/OstModernTextAppearance</item>
+    </style>
+
+    <!-- Text appearance to use for ALL text views (including FontTextView) -->
+    <style name="OstModernTextAppearance" parent="@android:style/TextAppearance.Holo">
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="OstModernTheme.ActionBarStyle" parent="android:Widget.ActionBar">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:titleTextStyle">@style/ActionBarnameTextStyle</item>
+    </style>
+
+    <style name="ActionBarnameTextStyle" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/action_bar_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="ActionBarMargin">
+        <item name="android:paddingTop">?android:actionBarSize</item>
+    </style>
+    <style name="ListFont" parent="@android:style/Widget.ListView">
+        <item name="android:padding">5dp</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+    </style>
+    <style name="OstModernButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/writer_text_size</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

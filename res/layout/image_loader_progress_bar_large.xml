@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/progress_bar_large"
+    android:layout_width="@dimen/large_progress_bar_size"
+    android:layout_height="@dimen/large_progress_bar_size"
+    style="@android:style/Widget.Holo.ProgressBar.Large"/>

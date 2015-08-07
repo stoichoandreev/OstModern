@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="shadow_resource">@android:drawable/dialog_holo_light_frame</drawable>
+</resources>

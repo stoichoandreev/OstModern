@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadow_resource">
+    <ImageView
+        android:id="@+id/episode_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+    <View
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"/>
+    <uk.ostmodern.incoming.test.custom.OstModernCustomTextView
+        android:id="@+id/episode_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:text="@string/app_name"
+        android:layout_above="@+id/bottom_view"
+        android:layout_marginBottom="20dp"
+        android:background="@color/black_with_40_percent_opacity"
+        android:gravity="center"
+        android:lines="2"
+        android:maxLines="2"
+        android:shadowColor="@color/black_with_80_percent_opacity"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"/>
+
+
+</RelativeLayout>

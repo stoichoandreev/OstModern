@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="drawer_background">#000000</color>
+    <color name="white_with_80_percent_opacity">#CCffffff</color>
+    <color name="white_with_20_percent_opacity">#33ffffff</color>
+    <color name="header_text_color">#aaaaaa</color>
+    <color name="drawer_grey_text_color">#555555</color>
+    <color name="black_with_40_percent_opacity">#66000000</color>
+    <color name="black_with_80_percent_opacity">#CC000000</color>
+    <color name="black_with_55_percent_opacity">#8c000000</color>
+    <color name="disabled_view_color">#aa000000</color>
+    <color name="toolbar_color">#CC222222</color>
+    <color name="buttons_color">#565656</color>
+    <color name="buttons_color_down">#99565656</color>
+    <color name="card_view_name_color">#666666</color>
+    <!--<color name="text_main_background_color">#ddaadd</color>-->
+
+    <!-- Set Level Colors-->
+    <color name="user_level_1">#d74d6b</color>
+    <color name="user_level_2">#c26779</color>
+    <color name="user_level_3">#ae8386</color>
+    <color name="user_level_4">#8ab09b</color>
+    <color name="user_level_5">#58e7b5</color>
+    <color name="user_level_6">#39eab6</color>
+    <color name="user_level_7">#41fff7</color>
+    <color name="user_level_8">#41ffff</color>
+    <color name="user_level_9">#ff9911</color>
+    <color name="user_level_10">#ff9944</color>
+    <color name="user_level_default">@android:color/white</color>
+
+</resources>
